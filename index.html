@@ -32,7 +32,9 @@
             <!-- Todo: City, State, and Zip Inputs -->
                 <label for="city">Your City</label>
                 <input type="text" id="city" name="city">
-                <select name="state"> 
+                <label for="state">Your State</label>
+                <input name="state" list="state-list">
+                <datalist id="state-list"> 
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -82,7 +84,7 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WV">West Virginia</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </datalist>
                 <label for="zip">Your Zipcode</label>
                 <input type="text" id="zipcode" name="zip">
             </fieldset>
@@ -121,7 +123,7 @@
                 <legend>Add-ons and Extras</legend>
                 <div>
                     <label for="extras">Sauna and Spa Access Key</label>
-                    <input type="checkbox" value="saunakey" name="extras">
+                    <input type="checkbox" value="saunakey" name="extras" checked>
                 </div>
                 <div>
                     <label for="extras">In-Room Hot Tub</label>
@@ -129,7 +131,7 @@
                 </div>
                 <div>
                     <label for="extras">In-Room Hot Drink Station</label>
-                    <input type="checkbox" value="hotdrink" name="extras">
+                    <input type="checkbox" value="hotdrink" name="extras" checked>
                 </div>
                 <div>
                     <label for="extras">Happy Hour Bar Pass</label>
